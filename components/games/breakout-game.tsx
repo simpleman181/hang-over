@@ -31,7 +31,7 @@ const BRICK_PADDING = 4
 
 export function BreakoutGame({ isOpen, onClose }: BreakoutProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const animationRef = useRef<number>()
+  const animationRef = useRef<number | null>(null)
   const [score, setScore] = useState(0)
   const [highScore, setHighScore] = useState(0)
   const [lives, setLives] = useState(3)
